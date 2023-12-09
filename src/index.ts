@@ -35,7 +35,6 @@ io.on("connection", (socket) => {
 
   socket.on("join_room", (data) => {
     const { username, room } = data;
-    console.log(`asd`, username, room);
     socket.join(room);
 
     let __createdtime__ = Date.now();
